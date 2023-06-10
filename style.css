@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(14, 10, 10);
+    display: flex;
+    align-items: center;
+}
+.digital-clock{
+   width: 300px;
+   height: 90px;
+   background-color: #fff;
+   margin: auto;
+   text-align: center;
+   padding-top: 30px;
+   animation: clock 2s linear infinite;
+   border-radius: 50px;
+
+}
+@keyframes clock{
+    0%{
+       box-shadow: 0 0 40px #e65c00;
+    }
+    50%{
+       box-shadow: 0 0 40px #18b201;
+    }
+    75%{
+       box-shadow: 0 0 40px #0456c8;
+    }
+    100%{
+        box-shadow: 0 0 40px #0456c8;
+     }
+   
+   }
+   span{
+       color: #04217a;
+       font-size: 22px;
+   }
